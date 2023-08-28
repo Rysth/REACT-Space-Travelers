@@ -9,7 +9,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={() => 'Hi'} />
+          <Route path="/profile" element={() => 'Hi'} />
+          <Route path="/rockets" element={() => 'Hi'} />
+          <Route path="/mission" element={() => 'Hi'} />
         </Routes>
       </BrowserRouter>
     </div>

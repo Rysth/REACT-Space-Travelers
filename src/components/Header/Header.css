@@ -24,8 +24,37 @@
   font-size: 1.25rem;
 }
 
+.nav-list {
+  text-align: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin: 1em 0;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .logo {
     justify-content: flex-start;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
   }
 }
