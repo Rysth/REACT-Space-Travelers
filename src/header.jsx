@@ -1,4 +1,5 @@
 import planet from "./planet.png";
+import './style/style.css';
 
 function Header() {
   return <div className="nav">
