@@ -9,9 +9,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/profile" element={() => 'Hi'} />
-          <Route path="/rockets" element={() => 'Hi'} />
-          <Route path="/mission" element={() => 'Hi'} />
+          <Route path="/profile" element={<h2>Hello World!</h2>} />
+          <Route path="/rockets" element={<h2>Rockets!</h2>} />
+          <Route path="/missions" element={<h2>Missions!</h2>} />
         </Routes>
       </BrowserRouter>
     </div>

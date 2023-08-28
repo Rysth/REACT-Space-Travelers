@@ -21,7 +21,7 @@ function Header() {
               Missions
             </NavLink>
           </li>
-          <li className="nav-item">|</li>
+          <li className="nav-item separator">|</li>
           <li className="nav-item">
             <NavLink to="/profile" className="nav-link">
               My Profile
