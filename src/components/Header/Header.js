@@ -1,5 +1,5 @@
-import planet from './planet.png';
-import './style/style.css';
+import planet from '../../assets/img/planet.png';
+import './Header.css';
 
 function Header() {
   return (
