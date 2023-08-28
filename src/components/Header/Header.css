@@ -6,17 +6,26 @@
 
 .nav {
   border: 1px solid black;
-  width: 100%;
-}
-
-.image {
-  width: 50px;
-  height: 50px;
+  padding: 1em 0;
 }
 
 .logo {
-  width: 25rem;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.nav-image {
+  max-width: 50px;
+}
+
+.nav-title {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    justify-content: flex-start;
+  }
 }
