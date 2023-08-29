@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import '../../index.css';
 import { getData } from '../../redux/rockets/rocketSlice';
 import Rocket from './Rocket';
 
@@ -11,13 +12,12 @@ export default function RocketContainer() {
   }, [dispatch]);
 
   return (
-    <div>
-      <h2>Rockets</h2>
-      <div>
+    <div className="mt-8">
+      <div className="flex flex-col gap-10">
         {rockets.map((rkt) => (
           <Rocket
-            image={rkt.photo}
-            description={rkt.descripte}
+            photo={rkt.image}
+            description={rkt.description}
             name={rkt.name}
             key={rkt.id}
           />
