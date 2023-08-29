@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import './MissionItem.css';
 
-function MissionItem({ title, parragraph }) {
+function MissionItem(
+  /* prettier-ignore */
+  {
+    id,
+    index,
+    title,
+    parragraph,
+  },
+) {
+  const [burnout, setBurnOut] = useState(false);
+
+  useEffect(() => {
+    if (index % 2 === 0) {
+      setBurnOut(true);
+    }
+  }, [id]);
+
   return (
-    <div className="missions-item">
+    <div className={burnout ? 'missions-item burnout' : 'missions-item'}>
       <header className="missions-data">
         <h3 className="missions-text title">{title}</h3>
       </header>
@@ -23,6 +40,8 @@ function MissionItem({ title, parragraph }) {
 }
 
 MissionItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   parragraph: PropTypes.string.isRequired,
 };

@@ -23,9 +23,11 @@ function Missions() {
             <span className="missions-title" />
           </header>
           <div className="missions-body">
-            {missions.map((mission) => (
+            {missions.map((mission, index) => (
               <MissionItem
                 key={mission.id}
+                id={mission.id}
+                index={index}
                 title={mission.name}
                 parragraph={mission.description}
               />
