@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function Rocket({
-  photo, descripte, name,
+  photo, description, name,
 }) {
   return (
     <section>
@@ -11,8 +11,8 @@ export default function Rocket({
         </div>
         <div className="col-9">
           <h3>{name}</h3>
-          <p>{descripte}</p>
-          <button >Reserve</button>
+          <p>{description}</p>
+          <button type="button">Reserve</button>
         </div>
       </div>
     </section>
@@ -20,7 +20,7 @@ export default function Rocket({
 }
 
 Rocket.propTypes = {
-  image: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
