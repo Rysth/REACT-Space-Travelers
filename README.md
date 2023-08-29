@@ -51,7 +51,7 @@
 
 ### 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://react-smartcommerce.onrender.com/)
+- [Live Demo]()
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
