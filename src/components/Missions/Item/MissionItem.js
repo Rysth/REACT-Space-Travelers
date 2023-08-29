@@ -17,7 +17,7 @@ function MissionItem(
     if (index % 2 === 0) {
       setBurnOut(true);
     }
-  }, [id]);
+  }, [index, id]);
 
   return (
     <div className={burnout ? 'missions-item burnout' : 'missions-item'}>
