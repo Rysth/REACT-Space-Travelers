@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import planet from '../../assets/img/planet.png';
-import './Header.css';
+import '../../index.css';
 
 function Header() {
   return (
@@ -11,18 +11,18 @@ function Header() {
           <h1 className="nav-title">Space Travelers&lsquo; Hub</h1>
         </div>
         <ul className="nav-list">
-          <li className="nav-item">
+          <li className="nav-item text-blue-600">
             <NavLink to="/" className="nav-link">
               Rockets
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item text-blue-600">
             <NavLink to="/missions" className="nav-link">
               Missions
             </NavLink>
           </li>
           <li className="nav-item separator">|</li>
-          <li className="nav-item">
+          <li className="nav-item text-blue-600">
             <NavLink to="/profile" className="nav-link">
               My Profile
             </NavLink>
