@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions } from '../../redux/missions/missionsSlice';
 import MissionItem from './Item/MissionItem';
 import './Missions.css';
 
 function Missions() {
-  /*   const { missions } = useSelector((store) => store.missions); */
+  const { missions } = useSelector((store) => store.missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,7 +23,13 @@ function Missions() {
             <span className="missions-title" />
           </header>
           <div className="missions-body">
-            <MissionItem />
+            {missions.map((mission) => (
+              <MissionItem
+                key={mission.id}
+                title={mission.name}
+                parragraph={mission.description}
+              />
+            ))}
           </div>
         </div>
       </div>
