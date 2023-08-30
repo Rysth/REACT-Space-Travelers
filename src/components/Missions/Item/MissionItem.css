@@ -40,6 +40,10 @@
   cursor: pointer;
 }
 
+.missions-text.tag.member {
+  background-color: green;
+}
+
 .missions-data.center {
   display: flex;
   align-items: center;

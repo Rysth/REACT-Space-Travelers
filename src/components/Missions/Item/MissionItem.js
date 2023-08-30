@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './MissionItem.css';
 import JoinButton from '../Buttons/JoinButton';
 import LeaveButton from '../Buttons/LeaveButton';
+import TagStatus from '../Tags/TagStatus';
 
 function MissionItem(
   /* prettier-ignore */
@@ -29,7 +30,14 @@ function MissionItem(
         <p className="missions-text parragraph">{parragraph}</p>
       </div>
       <div className="missions-data center">
-        <p className="missions-text tag">Not a Member</p>
+        {status ? (
+          <TagStatus text="Not a Member" classList="missions-text tag" />
+        ) : (
+          <TagStatus
+            text="Active Member"
+            classList="missions-text tag member"
+          />
+        )}
       </div>
       <div className="missions-data center">
         {status ? (
