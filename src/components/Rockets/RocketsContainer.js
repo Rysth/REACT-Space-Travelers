@@ -19,7 +19,9 @@ export default function RocketContainer() {
             photo={rkt.image}
             description={rkt.description}
             name={rkt.name}
+            id={rkt.id}
             key={rkt.id}
+            isReserved={rkt.isReserved}
           />
         ))}
       </div>
