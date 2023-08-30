@@ -46,6 +46,11 @@
   flex-wrap: wrap;
 }
 
+.missions-text.button.leave {
+  border-color: red;
+  color: red;
+}
+
 @media (min-width: 768px) {
   .missions-item {
     display: grid;

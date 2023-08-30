@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { missionsActions } from '../../../redux/missions/missionsSlice';
 import './MissionItem.css';
+import JoinButton from '../Buttons/JoinButton';
+import LeaveButton from '../Buttons/LeaveButton';
 
 function MissionItem(
   /* prettier-ignore */
@@ -14,23 +14,10 @@ function MissionItem(
   },
 ) {
   const [burnout, setBurnOut] = useState(false);
-  const dispatch = useDispatch();
-
   const [status, setStatus] = useState(true);
-  const handleJoinningMission = () => {
-    setStatus(false);
-    dispatch(missionsActions.joiningMission({ id }));
-  };
-
-  const handleLeavingMission = () => {
-    setStatus(true);
-    dispatch(missionsActions.leavingMission({ id }));
-  };
 
   useEffect(() => {
-    if (index % 2 === 0) {
-      setBurnOut(true);
-    }
+    if (index % 2 === 0) setBurnOut(true);
   }, [index, id]);
 
   return (
@@ -45,13 +32,11 @@ function MissionItem(
         <p className="missions-text tag">Not a Member</p>
       </div>
       <div className="missions-data center">
-        <button
-          type="button"
-          className="missions-text button"
-          onClick={status ? handleJoinningMission : handleLeavingMission}
-        >
-          Join Mission
-        </button>
+        {status ? (
+          <JoinButton id={id} setStatus={setStatus} />
+        ) : (
+          <LeaveButton id={id} setStatus={setStatus} />
+        )}
       </div>
     </div>
   );
