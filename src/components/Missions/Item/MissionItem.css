@@ -40,10 +40,19 @@
   cursor: pointer;
 }
 
+.missions-text.tag.member {
+  background-color: green;
+}
+
 .missions-data.center {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.missions-text.button.leave {
+  border-color: red;
+  color: red;
 }
 
 @media (min-width: 768px) {
