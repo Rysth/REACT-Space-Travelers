@@ -30,12 +30,8 @@
 }
 
 @media (min-width: 768px) {
-  .missions-table {
-    width: 100%;
-  }
-
   .missions-heading {
     display: grid;
-    grid-template-columns: 150px 63.5% 180px 180px;
+    grid-template-columns: 150px 890px 180px 180px;
   }
 }

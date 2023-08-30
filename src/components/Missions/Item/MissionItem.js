@@ -15,8 +15,16 @@ function MissionItem(
 ) {
   const [burnout, setBurnOut] = useState(false);
   const dispatch = useDispatch();
+
+  const [status, setStatus] = useState(true);
   const handleJoinningMission = () => {
+    setStatus(false);
     dispatch(missionsActions.joiningMission({ id }));
+  };
+
+  const handleLeavingMission = () => {
+    setStatus(true);
+    dispatch(missionsActions.leavingMission({ id }));
   };
 
   useEffect(() => {
@@ -40,7 +48,7 @@ function MissionItem(
         <button
           type="button"
           className="missions-text button"
-          onClick={handleJoinningMission}
+          onClick={status ? handleJoinningMission : handleLeavingMission}
         >
           Join Mission
         </button>
