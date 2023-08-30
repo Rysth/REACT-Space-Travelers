@@ -6,7 +6,7 @@ import { reserve } from '../../redux/rockets/rocketSlice';
 export default function Rocket({
   photo, description, name, id, isReserved,
 }) {
-  const reservedBadge = <span className="border bg-teal-400 text-white px-1 rounded-md text-sm">Reserved</span>;
+  const reservedbtn = <span className="border bg-teal-400 text-white px-1 rounded-md text-sm">Reserved</span>;
   return (
     <section>
       <div className="flex justify-start px-16">
@@ -16,7 +16,7 @@ export default function Rocket({
         <div className="w-3/4 ml-4 text-base">
           <h3 className="font-bold text-lg mt-2">{name}</h3>
           <p>
-            {isReserved && reservedBadge}
+            {isReserved && reservedbtn}
             &nbsp;
             {description}
           </p>
