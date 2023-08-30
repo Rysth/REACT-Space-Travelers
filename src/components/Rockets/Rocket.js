@@ -6,10 +6,6 @@ import { reserve, cancelBooking } from '../../redux/rockets/rocketSlice';
 export default function Rocket({
   photo, description, name, id, isReserved,
 }) {
-  // added reserved button
-  const reservedbtn = <span className="bg-teal-500 px-2 rounded text-sm mr-2">reserved</span>;
-  const className = isReserved ? reservedbtn : '';
-
   // added rocket component
   return (
     <section>
@@ -20,8 +16,8 @@ export default function Rocket({
         <div className="w-3/4 ml-4 text-base">
           <h3 className="font-bold text-lg mt-2">{name}</h3>
           <p>
-            {className}
-            { description}
+            {isReserved && <BageReserve />}
+            {description}
           </p>
           {isReserved ? <CButton id={id} /> : <RButton id={id} /> }
         </div>
@@ -53,13 +49,20 @@ RButton.propTypes = {
   id: PropTypes.string.isRequired,
 };
 
+// added badge component
+const BageReserve = () => (
+  <>
+    <div className="bg-teal-500 px-2 rounded text-sm mr-2 inline-block">Reserved</div>
+  </>
+);
+
 // added cancel booking functionality
 function CButton({ id }) {
   const dispatch = useDispatch();
   return (
     <button
       type="button"
-      className="border border-gray-700 text-gray-500 rounded px-4 py-1 mt-2"
+      className="bg-white text-black  ring-gray-600 ring-2 rounded px-2 py-1 mt-2 text-base"
       onClick={() => dispatch(cancelBooking(id))}
     >
       Cancel Reservation
