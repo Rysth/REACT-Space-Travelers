@@ -1,5 +1,7 @@
 :root {
   --FF-primary: 'Poppins', sans-serif;
+  --CL-neutral-black: #000;
+  --CL-neutral-white: #fff;
 }
 
 html,

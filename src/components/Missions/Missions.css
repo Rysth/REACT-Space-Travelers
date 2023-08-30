@@ -1,0 +1,41 @@
+:root {
+  --CL-primary-gray: #c7c7c7;
+  --CL-primary-gray-darker: #868686;
+  --CL-primary-light: #e0e0e0;
+}
+
+.missions-content {
+  padding: 1em 0;
+  overflow: auto;
+}
+
+.missions-table {
+  width: 50em;
+}
+
+.missions-title {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.missions-title,
+.missions-data {
+  border: 1px solid var(--CL-primary-gray);
+  padding: 1em;
+}
+
+.missions-heading {
+  display: grid;
+  grid-template-columns: 150px 600px 180px 180px;
+}
+
+@media (min-width: 768px) {
+  .missions-table {
+    width: 100%;
+  }
+
+  .missions-heading {
+    display: grid;
+    grid-template-columns: 150px 63.5% 180px 180px;
+  }
+}
