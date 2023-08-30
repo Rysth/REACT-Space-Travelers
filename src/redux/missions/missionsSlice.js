@@ -30,6 +30,16 @@ const missionsSlice = createSlice({
         return { ...mission, reserved: true };
       });
       state.missions = arrayChanged;
+      console.log(arrayChanged);
+    },
+    leavingMission(state, action) {
+      const { id } = action.payload;
+      const arrayChanged = state.missions.map((mission) => {
+        if (mission.id !== id) return mission;
+        return { ...mission, reserved: false };
+      });
+      state.missions = arrayChanged;
+      console.log(arrayChanged);
     },
   },
   extraReducers: (builder) => {
