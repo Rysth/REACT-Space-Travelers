@@ -30,7 +30,6 @@ const missionsSlice = createSlice({
         return { ...mission, reserved: true };
       });
       state.missions = arrayChanged;
-      console.log(arrayChanged);
     },
   },
   extraReducers: (builder) => {
