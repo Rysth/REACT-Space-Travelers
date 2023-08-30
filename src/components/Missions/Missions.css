@@ -10,7 +10,7 @@
 }
 
 .missions-table {
-  width: 50em;
+  width: max-content;
 }
 
 .missions-title {

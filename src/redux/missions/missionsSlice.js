@@ -22,7 +22,16 @@ const initialState = {
 const missionsSlice = createSlice({
   name: 'missions',
   initialState,
-  reducers: {},
+  reducers: {
+    joiningMission(state, action) {
+      const { id } = action.payload;
+      const arrayChanged = state.missions.map((mission) => {
+        if (mission.id !== id) return mission;
+        return { ...mission, reserved: true };
+      });
+      state.missions = arrayChanged;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchMissions.pending, (state) => {
