@@ -54,6 +54,16 @@
   width: 200px;
 }
 
+.showRocket:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.showRocket:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 @media (min-width: 768px) {
   .logo {
     justify-content: flex-start;
