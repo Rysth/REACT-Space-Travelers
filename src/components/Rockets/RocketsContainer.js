@@ -4,7 +4,8 @@ import '../../index.css';
 import { getData } from '../../redux/rockets/rocketSlice';
 import Rocket from './Rocket';
 
-export default function RocketContainer() {
+// added rockets container component
+const RocketContainer = () => {
   const { rockets } = useSelector((store) => store.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -27,4 +28,5 @@ export default function RocketContainer() {
       </div>
     </div>
   );
-}
+};
+export default RocketContainer;

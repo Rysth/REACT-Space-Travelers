@@ -1,6 +1,7 @@
 import '../../index.css';
 import { useSelector } from 'react-redux';
 
+// added profile rockets component
 function ProfRockets() {
   const { rockets } = useSelector((store) => store.rockets);
   const bookRocket = rockets.filter((rocket) => rocket.isReserved);
