@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test Create snapshot for rocket 1`] = `
+exports[`Add Test Take snapshot of this container 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -13,7 +13,6 @@ Object {
             class="w-52"
           >
             <img
-              alt="roket"
               class="img"
             />
           </div>
@@ -22,12 +21,8 @@ Object {
           >
             <h3
               class="font-bold text-lg mt-2"
-            >
-              roket
-            </h3>
-            <p>
-              Rockets
-            </p>
+            />
+            <p />
             <button
               class="bg-blue-600 px-4 py-1 text-white rounded mt-2"
               type="button"
@@ -48,7 +43,6 @@ Object {
           class="w-52"
         >
           <img
-            alt="roket"
             class="img"
           />
         </div>
@@ -57,12 +51,8 @@ Object {
         >
           <h3
             class="font-bold text-lg mt-2"
-          >
-            roket
-          </h3>
-          <p>
-            Rockets
-          </p>
+          />
+          <p />
           <button
             class="bg-blue-600 px-4 py-1 text-white rounded mt-2"
             type="button"
@@ -127,7 +117,7 @@ Object {
 }
 `;
 
-exports[`Test rocket component Create snapshot for rocket 1`] = `
+exports[`Test Take snapshot of this container 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -140,7 +130,6 @@ Object {
             class="w-52"
           >
             <img
-              alt="roket"
               class="img"
             />
           </div>
@@ -149,12 +138,8 @@ Object {
           >
             <h3
               class="font-bold text-lg mt-2"
-            >
-              roket
-            </h3>
-            <p>
-              Rockets
-            </p>
+            />
+            <p />
             <button
               class="bg-blue-600 px-4 py-1 text-white rounded mt-2"
               type="button"
@@ -175,7 +160,6 @@ Object {
           class="w-52"
         >
           <img
-            alt="roket"
             class="img"
           />
         </div>
@@ -184,12 +168,8 @@ Object {
         >
           <h3
             class="font-bold text-lg mt-2"
-          >
-            roket
-          </h3>
-          <p>
-            Rockets
-          </p>
+          />
+          <p />
           <button
             class="bg-blue-600 px-4 py-1 text-white rounded mt-2"
             type="button"
