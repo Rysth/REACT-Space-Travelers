@@ -7,7 +7,7 @@ function DisplayMissions() {
   if (bookMission.length === 0) {
     return (
       <div className="border border-gray-600 px-4 py-5 font-thin text-base">
-        You have not reserved any rocket yet.
+        You have not joined into any mission yet.
       </div>
     );
   }
