@@ -12,14 +12,17 @@ function MissionItem(
     index,
     title,
     parragraph,
+    reserved,
   },
 ) {
   const [burnout, setBurnOut] = useState(false);
-  const [status, setStatus] = useState(true);
+  const [status, setStatus] = useState(reserved);
 
   useEffect(() => {
     if (index % 2 === 0) setBurnOut(true);
   }, [index, id]);
+
+  useEffect(() => {}, [status]);
 
   return (
     <div className={burnout ? 'missions-item burnout' : 'missions-item'}>
@@ -31,19 +34,19 @@ function MissionItem(
       </div>
       <div className="missions-data center">
         {status ? (
-          <TagStatus text="Not a Member" classList="missions-text tag" />
-        ) : (
           <TagStatus
             text="Active Member"
             classList="missions-text tag member"
           />
+        ) : (
+          <TagStatus text="Not a Member" classList="missions-text tag" />
         )}
       </div>
       <div className="missions-data center">
         {status ? (
-          <JoinButton id={id} setStatus={setStatus} />
-        ) : (
           <LeaveButton id={id} setStatus={setStatus} />
+        ) : (
+          <JoinButton id={id} setStatus={setStatus} />
         )}
       </div>
     </div>
@@ -55,6 +58,7 @@ MissionItem.propTypes = {
   index: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   parragraph: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 
 export default MissionItem;

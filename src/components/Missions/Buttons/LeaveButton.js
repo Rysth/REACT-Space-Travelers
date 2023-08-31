@@ -7,7 +7,7 @@ function LeaveButton({ id, setStatus }) {
   const dispatch = useDispatch();
 
   const handleLeavingMission = () => {
-    setStatus(true);
+    setStatus(false);
     dispatch(missionsActions.leavingMission({ id }));
   };
 
