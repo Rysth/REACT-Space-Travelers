@@ -7,7 +7,7 @@ function JoinButton({ id, setStatus }) {
   const dispatch = useDispatch();
 
   const handleJoinningMission = () => {
-    setStatus(false);
+    setStatus(true);
     dispatch(missionsActions.joiningMission({ id }));
   };
 

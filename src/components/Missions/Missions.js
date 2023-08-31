@@ -30,6 +30,7 @@ function Missions() {
                 index={index}
                 title={mission.name}
                 parragraph={mission.description}
+                reserved={mission.reserved}
               />
             ))}
           </div>
