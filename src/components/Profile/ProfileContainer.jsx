@@ -1,4 +1,5 @@
 import '../../index.css';
+import ProfileRockets from './Display_Rocket';
 
 function ProfileContainer() {
   return (
@@ -7,7 +8,8 @@ function ProfileContainer() {
         <h1>My Mission</h1>
       </div>
       <div className="w-1/2 font-bold text-xl font-serif">
-        <h1>My Profile</h1>
+        <h1 className="mb-4">My Mission</h1>
+        <ProfileRockets />
       </div>
     </section>
   );
