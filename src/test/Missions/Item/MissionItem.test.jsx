@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom/extend-expect';
 import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
-import store from '../../redux/Store';
-import MissionItem from '../../components/Missions/Item/MissionItem';
+import store from '../../../redux/Store';
+import MissionItem from '../../../components/Missions/Item/MissionItem';
 
 describe('Test', () => {
   const mission = (
