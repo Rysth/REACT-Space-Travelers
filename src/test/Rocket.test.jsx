@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
 import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
-import store from '../redux/Store';
+import store from '../redux/store';
 import Rocket from '../components/Rockets/Rocket';
 
 describe('Test', () => {
@@ -10,7 +10,7 @@ describe('Test', () => {
       <Rocket
         description="Rockets"
         id="1"
-        image="none"
+        photo="none"
         isReserved={false}
         name="roket"
       />
