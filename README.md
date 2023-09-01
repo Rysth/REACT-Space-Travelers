@@ -1,146 +1,237 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <img src="https://rysthcraft.netlify.app/img/LOGO-ONLY.svg" alt="logo" width="140"  height="auto" />
-  <br/>
-  <h3><b>John Palacios - Mahram Hossain</b></h3>
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Commands](#commands)
-  - [Test](#test)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Space Travelers Hub ](#-space-travelers-hub-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 REACT Space Travelers <a name="about-project"></a>
+# 📖 Space Travelers Hub <a name="about-project"></a>
 
-- **REACT Space Travelers** is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Built with React & Redux.
+**Space Travelers Hub** is the project that is built with react and shows the detailed information about rockets, dragons, and missions that a traveler need to travel to any desired planet.
 
 ## 🛠 Built With <a name="built-with"></a>
 
+1. ✅ **HTML**
+2. ✅ **CSS**
+3. ✅ **JavaScript**
+4. ✅ **Tailwind CSS**
+5. ✅ **React**
+6. ✅ **React Testing Library**
+7. ✅ **Redux**
+8. ✅ **Redux-Toolkit**
+9. ✅ **Git**
+10. ✅ **GitHub**
+11. ✅ **StyleLint**
+12. ✅ **ESLint**
+
 ### Tech Stack <a name="tech-stack"></a>
 
-- [HTML](https://www.w3schools.com/html/)
-- [CSS](https://www.w3schools.com/css/)
-- [JavaScript](https://www.w3schools.com/js/)
-- [React](https://react.dev/)
+<details>
+  <summary>Markup</summary>
+  <ul>
+    <li>HTML</li>
+    <li>MD markup</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Style</summary>
+  <ul>
+    <li>CSS</li>    
+    <li>Tailwind CSS</li>       
+  </ul>
+</details>
+
+<details>
+<summary>Dynamic</summary>
+  <ul>
+    <li>JavaScript</li>
+    <li>React</li>
+    <li>Redux</li>
+    <li>WepPack</li>
+  </ul>
+</details>
+<details>
+<summary>Testing</summary>
+  <ul>
+    <li>Jest</li>
+    <li>React Testing Library</li>
+  </ul>
+</details>
+
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- Feature 1
-- Feature 2
-- Feature 3
+- 🔰 **[Reserve a Rocket]**
+- 🔰 **[Cancel the Rocket]**
+- 🔰 **[Reserve a Dragon]**
+- 🔰 **[Cancel the Dragon]**
+- 🔰 **[List the current missions]**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo]()
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+**To get a local copy up and running, follow these steps.**
 
-### Setup <a name="setup"></a>
+1. Download or clone this [repostory](https://github.com/Rysth/REACT-Space-Travelers.git).
+2. Provide a modern web browser.
 
-Clone this repository to your desired folder:
+### Prerequisites
 
+**In order to run this project you need:**
+
+- ✔ [Git](https://git-scm.com/downloads) installed in your machine.
+- ✔ Sign in or sign up to your [Github](https://github.com/) account.
+- ✔ A professional editer such as [VS Code](https://code.visualstudio.com/download).
+- ✔ An Updated web browser such as Google Chrome, you can download it from [here](https://www.google.com/chrome/).
+- ✔ [Node.js](https://nodejs.org/en/download) installed in your machine.
+- ✔ Stylelint
+- ✔ ESLint
+- ✔ WebPack
+
+### Setup
+
+- Clone this [repository](https://github.com/Rysth/REACT-Space-Travelers.git) to your desired folder:
+
+- Example commands:
+
+```sh
+  cd [YOUR FOLDER]
+  git clone https://github.com/Rysth/REACT-Space-Travelers.git
 ```
-git clone https://github.com/Rysth/REACT-Template.git
-cd REACT-Template
-code . (To open VS Code Editor)
+
+### Install
+
+- Run the following command in the root directory of the project to install all dependecies.
+
+```sh
+  npm install
 ```
 
-Then, you will change everything you want!
+### Usage
 
-### Commands <a name="commands"></a>
+- To run the project, execute the following command:
 
-- ✔️ _npm start_:
-  Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
-
-- ✔️ _npm test_:
-  Launches the test runner in the interactive watch mode. See the section about running tests for more information.
-
-- ✔️ _npm run build_:
-  Builds the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### Test <a name="test"></a>
-
-In order to follow the Linters you could check them using this:
-
+```sh
+ cd [YOUR FOLDER]
+ git clone https://github.com/M-Anwar-Hussaini/Space-Travelers-Hub.git
 ```
-CSS Checker:
+
+### Run tests
+
+1. Stylelint
+
+```sh
 npx stylelint "**/*.{css,scss}"
+```
 
-ESLint Checker:
+2. ESLint ☑
+
+```sh
 npx eslint "**/*.{js,jsx}"
 ```
 
-_Use at the end '--fix' to help you out with any error._
+3. Jest ✔
+
+```sh
+npm test
+```
+
+### Deployment
+
+**This project is deployed by the author, no permission for deployment by any other client.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **John Palacios**
+👤 **Mahram Hossain Nazary**
 
-- GitHub: [@rysthcraft](https://github.com/Rysth)
-- Linkedin: [@johnpalacios](https://www.linkedin.com/in/john-rysthcraft/)
+- 👤 GitHub: [@Mahram Hossain](https://github.com/mhnazary)
+- 👤 Twitter: [@Mahram Hossain](https://twitter.com/mh_nazary)
+- 👤 LinkedIn: [@Mahram Hossain](https://www.linkedin.com/in/mh-nazary-515686204/)
 
-👤 **Mahram Hossain**
 
-- GitHub: [@mhnazary](https://github.com/mhnazary)
+👤 **John palacios**
+
+- 👤 GitHub: [@John palacios](https://github.com/Rysth)
+- 👤 LinkedIn: [John palacios](https://www.linkedin.com/in/john-palacios-rysthcraft/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Future Feature 1
-- Future Feature 2
-- Future Feature 3
+- [x] **[Jest testing]**
+- [x] **[React Library Testing]**
+- [x] **[Deployment]**
+- [ ] **[Responsive]**
+- [ ] **[Use developer local storage]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/M-Anwar-Hussaini/Space-Travelers-Hub/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project feel free to watch it and take some features that will enhance your project
-as well.
+If you like this project, kindly drop a start for the [repository](https://github.com/M-Anwar-Hussaini/Space-Travelers-Hub);
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the Microverse Team for reviewing my code and making me a better
-professional.
+**I would like to thank the following individuals and organizations for their contribution to this project.**
+
+- We would like to express our heartfelt gratitude to [**Microvere**](https://www.microverse.org/?grsf=mohammad-a-nbtazu) for the invaluable learning experience they have provided. The supportive community, dedicated mentors, and remote collaboration opportunities have enhanced my technical skills and prepared me for real-world projects. I extend my appreciation to the mentors and staff members for their guidance and support. The friendships and knowledge sharing within the Microverse community have made this journey truly rewarding.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LICENSE -->
+
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

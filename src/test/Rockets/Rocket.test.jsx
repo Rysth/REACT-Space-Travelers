@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom/extend-expect';
 import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
-import store from '../redux/store';
-import Rocket from '../components/Rockets/Rocket';
+import store from '../../redux/Store';
+import Rocket from '../../components/Rockets/Rocket';
 
 describe('Test', () => {
   const rocket = (
